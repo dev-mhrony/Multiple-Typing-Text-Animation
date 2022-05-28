@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Typing Text Animation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <span class="test first-text">I'm a</span>
+        <span class="test sec-text">Freelancer</span>
+
+    </div>
+
+    <script>
+        const test = document.querySelector(".sec-text");
+
+        const textLoad = () => {
+            setTimeout(() => {
+                text.textContent = "Freelancer";
+
+            }, 0);
+            setTimeout(() => {
+                text.textContent = "Blogger";
+
+            }, 4000);
+            setTimeout(() => {
+                text.textContent = "YouTuber";
+
+            }, 8000);
+        }
+
+        textLoad();
+        setInterval(textLoad,12000);
+    </script>
+</body>
+</html>
